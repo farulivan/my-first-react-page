@@ -3,125 +3,162 @@
   box-sizing: border-box;
 }
 
-/* ------------------THIS CSS is for Reasons-page */
-
-/* .main-text {
-  margin: 1.3rem;
-}
-
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.3rem;
-  box-shadow: 0 0 10px rgb(47, 173, 173);
-}
-
-.nav-items {
-  display: flex;
-  list-style: none;
-}
-
-.nav-items>li {
-  margin: 0 0.7rem;
-}
-
-img {
-  width: 100px;
-}
-
-ol {
-  margin: 1rem 2rem;
-}
-
-ol > li {
-  margin: 0.4rem;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  text-align: center;
-  transform: translateX(-50%);
-  padding: 0.3rem;
-  width: 100vw;
-  background-color: rgb(51, 90, 90);
-  color: white
-} */
-
-/* ------------------THIS CSS is for Facts-page */
-
-body {
+h1, h2, h3, body {
   margin: 0;
 }
+
+/* .container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+} */
+
+/* NAV styles */
 
 nav {
   height: 5.7rem;
   padding: 2rem 1.5rem;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+nav.dark {
   background-color: #21222A;
+}
+
+.nav--logo {
   display: flex;
   align-items: center;
 }
 
-/* .logo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 10.5rem;
-} */
-
-nav > h2 {
+.nav--logo_text > h2 {
   font-weight: 700;
   font-size: 1.5rem;
   color: #61DAFB;
-  margin-right: auto;
 }
 
-nav > h3 {
+.nav--logo_text > h3 {
   font-weight: 600;
   font-size: 1rem;
-  color: #DEEBF8;
+  color: #2B283A;
 }
 
-nav > img {
+nav.dark .nav--logo_text > h3 {
+  color: #918E9B;
+}
+
+.nav--logo_icon {
   width: 30px;
   height: 30px;
-  margin-right: 0.5rem;
+  margin-right: 1rem;
 }
 
-.main-text {
-  background-color: #282D35;
-  background-image: url(./images/reactjs-icon2.png);
+.nav--logo_text {
+  display: flex;
+  flex-direction: column;
+}
+
+.toggler {
+  display: flex;
+  align-items: center;
+}
+
+.toggler p {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.toggler--slider {
+  width: 25px;
+  height: 13px;
+  background-color: #2B283A;
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: content-box;
+}
+
+nav.dark .toggler--slider {
+  border-color: white;
+  background-color: #F5F5F5;
+}
+
+.toggler--slider--circle {
+  height: 13px;
+  width: 13px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+nav.dark .toggler--slider--circle {
+  background-color: black;
+}
+
+.toggler--light {
+  color: #2B283A;
+}
+
+nav.dark .toggler--light {
+  color: #918E9B;
+}
+
+.toggler--dark {
+  color: #D5D4D8;
+}
+
+nav.dark .toggler-dark {
+  color: #FFFFFF;
+}
+
+nav.dark .toggler--slider {
+  justify-content: flex-end;
+}
+
+/* MAIN styles */
+
+main {
+  background-image: url(./images/reactjs-icon2-light.png);
   background-repeat: no-repeat;
   background-position: right 60%;
   background-size: 120px;
-  color: #FFFFFF;
+  background-color: white;
+  color: #2B283A;
   height: 100vh;
   padding: 3rem 2rem;
+  z-index: 3;
 }
 
-.main-text > h1 {
+main.dark {
+  background-image: url(./images/reactjs-icon2.png); 
+  background-color: #282D35;
+  color: white; 
+}
+
+.main--title {
   margin: 0;
   font-size: 2.5rem;
   letter-spacing: -0.05em;
 }
 
-.main-text > ul {
+.main--facts {
   margin-top: 1.5rem;
 }
 
-.main-text > ul > li::marker {
-  font-size: 1.4rem;
-  color: #61DAFB;
-}
-
-.main-text > ul > li {
+.main--facts > li {
   line-height: 19px;
   padding-block: 0.5rem;
   max-width: 40ch;
 }
 
-.main-text {
-  z-index: 3;
+.main--facts > li::marker {
+  font-size: 1.4rem;
+  color: #61DAFB;
 }
