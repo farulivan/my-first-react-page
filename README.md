@@ -1,6 +1,6 @@
 # Getting Started
 
-This is a very brief and straightforward web page. This page is static, but it's the first time I've created a web page using React.
+This is a very brief and straightforward web page. This page is static, but it's the first time I've created a web page using React. I made this when I learn React from React Course (Scrimba) by Bob Ziroll (Head of Education at Scrimba).
 
 ## Overview
 
