@@ -2,8 +2,6 @@ import React from "react";
 import ReactLogo from "../images/reactjs-icon.png"
 
 export default function Navbar(props) {
-    console.log(props.darkMode)
-    console.log(props.toggleDarkMode)
     return (
         <nav className={props.darkMode ? "dark": ""}>
             <div className="nav--logo">
