@@ -7,11 +7,11 @@ h1, h2, h3, body {
   margin: 0;
 }
 
-/* .container {
+.container {
   display: flex;
   flex-direction: column;
   height: 100vh;
-} */
+}
 
 /* NAV styles */
 
@@ -133,7 +133,6 @@ main {
   color: #2B283A;
   height: 100vh;
   padding: 3rem 2rem;
-  z-index: 3;
 }
 
 main.dark {
